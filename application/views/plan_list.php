@@ -9,6 +9,7 @@
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <div class="navbar-fixed">
@@ -56,7 +57,7 @@
 </body>
 
 <footer class="page-footer grey darken-1" >
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/materialize.min.js"></script>
+
           <div class="container">
             <div class="row">
               <div class="col s12">
