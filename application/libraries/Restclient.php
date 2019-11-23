@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Restclient{
       var $API ="";
       function __construct() {
-        $this->API="http://localhost/ApiInternet/index.php/api/";
+        $this->API="https://apiinternet.herokuapp.com/index.php/api/";
       }
  
       function get($param = null)

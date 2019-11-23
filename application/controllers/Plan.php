@@ -10,7 +10,6 @@ class Plan extends CI_Controller {
  }
 
  public function view(){
-   $id = $this->uri->segment(3);
    $this->load->model('plan_model');
    $data['plan'] = $this->plan_model->plan($this->uri->segment(3))[0];
    $this->load->view('plan_view',$data);
@@ -52,6 +51,7 @@ class Plan extends CI_Controller {
  public function edit(){
  $this->load->model('plan_model');
  $data['plan'] = $this->plan_model->plan($this->uri->segment(3))[0];
+ $this->plan_model->plan($this->uri->segment(3))[0];
  $this->load->view('plan_edit',$data);
  }
  

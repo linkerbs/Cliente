@@ -4,7 +4,7 @@ class Plan_model extends CI_Model {
  var $API ="";
  function __construct() {
  parent::__construct();
- $this->API="http://localhost/ApiInternet/index.php/";
+ $this->API="https://apiinternet.herokuapp.com/index.php/";
  }
  
  function list_plan(){
