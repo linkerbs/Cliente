@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Planes de internet</title>
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/materialize.min.css"  media="screen,projection"/>
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/main.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <div class="navbar-fixed">
