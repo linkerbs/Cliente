@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Restclient{
       var $API ="";
       function __construct() {
-        $this->API="http://localhost/ApiInternet/index.php/api";
+        $this->API="http://localhost/ApiInternet/index.php/api/";
       }
  
       function get($param = null)
@@ -53,7 +53,7 @@ class Restclient{
  
       function delete($id)
       {
-         $array = array("item_id" => $id);
+         $array = array("Id" => $id);
          $curl_handle = curl_init();
          curl_setopt($curl_handle, CURLOPT_URL, $this->API);
          curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);

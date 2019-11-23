@@ -1,6 +1,4 @@
 <?php 
-
-
 class Plan_model extends CI_Model {
  
  var $API ="";
