@@ -7,9 +7,8 @@
 	<title>Agregando plan</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <div class="navbar-fixed">
     <nav class="cyan lighten-4">
@@ -37,7 +36,7 @@
 	</tr>
 	<tr>
 		<td><label for="precio"><b>Precio:</b></label> </td>
-		<td><?php echo form_input('precio','',array('placeholder'=>'precio')) ?></td>
+		<td><?php echo form_input('precio','',array('placeholder'=>'precio','type' => 'number')) ?></td>
 	</tr>
 	<tr>
 		<td colspan="2"><?php echo form_submit('submit', 'Guardar','class="waves-effect waves-light btn"');?> <a href = "<?= site_url('plan/'); ?>" class="waves-effect waves-light btn"><i class="material-icons right">arrow_back</i>Volver</a></td>
