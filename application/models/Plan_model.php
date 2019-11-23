@@ -12,7 +12,7 @@ class Plan_model extends CI_Model {
  }
  
  function plan($id){
- $params = array('Id'=>  $id);
+ $params = array('id'=>  $id);
  return json_decode($this->restclient->get($params),true);
  }
  

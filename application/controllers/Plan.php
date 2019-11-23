@@ -8,6 +8,13 @@ class Plan extends CI_Controller {
  $data['title'] = "Planes";
  $this->load->view('plan_list',$data);
  }
+
+ public function view(){
+   $id = $this->uri->segment(3);
+   $this->load->model('plan_model');
+   $data['plan'] = $this->plan_model->plan($this->uri->segment(3))[0];
+   $this->load->view('plan_view',$data);
+   }
  
  public function add()
  {

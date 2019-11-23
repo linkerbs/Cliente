@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Agregando plan</title>
+	<title>Editando</title>
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/main.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,32 +17,31 @@
     </nav>
   </div>
 <body>
-<main>
-<?php echo form_open('plan/save') ?>
-<h3>Agregando registro</h3>
-<table>
+	<main>
+    
+	<h4> Viendo plan de: <?php echo $plan['proveedor'] ?> </h4>
+	<table>
 	<tr>
-	<td><label for="proveedor"><b>Proveedor:</b></label> </td>
-		<td><?php echo form_input('proveedor','',array('placeholder'=>'proveedor')) ?></td>
+		<td>Proveedor</td>
+		<td><?php echo form_input('proveedor',$plan['proveedor'],array('placeholder'=>'proveedor','readonly'=>'readonly')) ?></td>
 	</tr>
 	<tr>
-	<td><label for="velocidad"><b>Velocidad:</b></label> </td>
-		<td><?php echo form_input('velocidad','',array('placeholder'=>'velocidad')) ?></td>
+		<td>Velocidad</td>
+		<td><?php echo form_input('velocidad',$plan['velocidad'],array('placeholder'=>'velocidad','readonly'=>'readonly')) ?></td>
 	</tr>		
 	<tr>
-	<td><label for="calidad"><b>Calidad:</b></label> </td>
-		<td><?php echo form_input('calidad','',array('placeholder'=>'calidad')) ?></td>
+		<td>Calidad</td>
+		<td><?php echo form_input('calidad',$plan['calidad'],array('placeholder'=>'calidad','readonly'=>'readonly')) ?></td>
 	</tr>
 	<tr>
-		<td><label for="precio"><b>Precio:</b></label> </td>
-		<td><?php echo form_input('precio','',array('placeholder'=>'precio')) ?></td>
+		<td>Precio</td>
+		<td><?php echo form_input('precio',$plan['precio'],array('placeholder'=>'precio','readonly'=>'readonly')) ?></td>
 	</tr>
 	<tr>
-		<td colspan="2"><?php echo form_submit('submit', 'Guardar','class="waves-effect waves-light btn"');?> <a href = "<?= site_url('plan/'); ?>" class="waves-effect waves-light btn"><i class="material-icons right">arrow_back</i>Volver</a></td>
+		<td colspan="2"><a href = "<?= site_url('plan/'); ?>" class="waves-effect waves-light btn"><i class="material-icons right">arrow_back</i>Volver</a></td>
 	</tr>
 </table>
-<?php echo form_close(); ?>	
-</main>
+	</main>
 </body>
 <footer class="page-footer grey darken-1">
 <script type="text/javascript" src="<?php echo base_url();?>assets/js/materialize.min.js"></script>
@@ -61,5 +60,3 @@
           </div>
 </footer>
 </html>
-
-

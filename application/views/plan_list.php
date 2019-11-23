@@ -1,9 +1,33 @@
-<h2>List of <?php echo $title; ?></h2>
-<hr />
-<?php echo anchor('plan/add','NEW PRODUCT'); ?>
-<br/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Planes de internet</title>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/main.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<div class="navbar-fixed">
+    <nav class="cyan lighten-4">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Sistema de internet</a>
+      </div>
+    </nav>
+  </div>
+<body>
+<main>
+<br />
+<a href = "<?= site_url('plan/add'); ?>" class="waves-effect waves-light btn"><i class="material-icons right">add_circle_outline</i>Agregar un nuevo plan</a>
 <br>
-<table border="1">
+<br>
+
+
+
+
+<div class="col s12 m4 l2">
+<table class="responsive-table">
 	<thead>
 		<tr>
 			<th>Proveedor</th>
@@ -20,8 +44,31 @@
 			<td><?php echo $list->velocidad ?></td>
 			<td><?php echo $list->calidad ?></td>
 			<td><?php echo "$".$list->precio ?></td>
-			<td> <?php echo anchor('plan/edit/'.$list->Id,'Edit') ?> || <?php echo anchor('plan/delete/'.$list->Id,'Delete') ?></td>
+			<td>  <?php echo anchor('plan/edit/'.$list->Id,'Editar','class="waves-effect waves-light btn"><i class="large material-icons right">edit</i') ?> || <?php echo anchor('plan/delete/'.$list->Id,'Eliminar','class="waves-effect red btn"><i class="large material-icons right">delete_forever</i') ?> || <?php echo anchor('plan/view/'.$list->Id,'Ver','class="waves-effect cyan btn"><i class="large material-icons right">remove_red_eye</i') ?></td>
 		</tr>
 		<?php	} 	?>	
 	</tbody>
-</table>
+</table>	
+</div>
+</main>
+</body>
+
+<footer class="page-footer grey darken-1" >
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/materialize.min.js"></script>
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h5 class="white-text">Footer para que se vea bonito</h5>
+                <p class="grey-text text-lighten-4">Contactenos pls.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © Parcial 3 2019 
+            </div>
+          </div>
+</footer>
+</html>
+
+

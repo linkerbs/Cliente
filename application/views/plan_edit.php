@@ -1,4 +1,25 @@
-<?php echo form_open('plan/save_edit') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Editando plan</title>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>/assets/css/main.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<div class="navbar-fixed">
+    <nav class="cyan lighten-4">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Sistema de internet</a>
+      </div>
+    </nav>
+  </div>
+<body>
+	<main>
+	<h4>Editando plan de:<?php echo $plan['proveedor'] ?> </h4>
+	<?php echo form_open('plan/save_edit') ?>
 <?php echo form_hidden('Id',$plan['Id']) ?>
 <table>
 
@@ -20,7 +41,33 @@
 		<td><?php echo form_input('precio',$plan['precio'],array('placeholder'=>'precio')) ?></td>
 	</tr>
 	<tr>
-		<td colspan="2"> <hr><?php echo form_submit('submit', 'Actualizar plan'); ?> <?php echo anchor('plan','Back') ?></td>
+	<td colspan="2"><?php echo form_submit('submit', 'Actualizar','class="waves-effect waves-light btn"');?> <a href = "<?= site_url('plan/'); ?>" class="waves-effect waves-light btn"><i class="material-icons right">arrow_back</i>Volver</a></td>
 	</tr>
 </table>
 <?php echo form_close(); ?>
+	</main>
+</body>
+<footer class="page-footer grey darken-1">
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/materialize.min.js"></script>
+          <div class="container" >
+            <div class="row">
+              <div class="col s12">
+                <h5 class="white-text">Footer para que se vea bonito</h5>
+                <p class="grey-text text-lighten-4">Contactenos pls.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © Parcial 3 2019 
+            </div>
+          </div>
+</footer>
+</html>
+
+
+
+
+
+
+
