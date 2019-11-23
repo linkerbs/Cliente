@@ -9,7 +9,7 @@
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>cliente/assets/css/main.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <div class="navbar-fixed">
