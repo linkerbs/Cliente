@@ -9,7 +9,6 @@
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>cliente/assets/css/main.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <div class="navbar-fixed">
@@ -47,22 +46,6 @@
 <?php echo form_close(); ?>	
 </main>
 </body>
-<footer class="page-footer grey darken-1">
-
-          <div class="container" >
-            <div class="row">
-              <div class="col s12">
-                <h5 class="white-text">Footer para que se vea bonito</h5>
-                <p class="grey-text text-lighten-4">Contactenos pls.</p>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © Parcial 3 2019 
-            </div>
-          </div>
-</footer>
 </html>
 
 
